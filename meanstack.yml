@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  become: true
+  vars:
+          ansible_become-pass: password
+          var_node: /tmp
+  roles:
+          - prerequisites
+          - mongodb
+          - nodejs
